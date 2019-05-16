@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>jQuery Mobile</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	
+	<style>
+		img {width:100%; height:100%;}
+	</style>
+</head>
+
+<body>
+<div data-role="page" id="page1">
+	<div data-role="header" data-theme="b">
+		<h1>서울 관광 명소 소개</h1>
+	</div>
+
+	<div data-role="content" >
+		<ul data-role="listview" data-inset="true" data-divider-theme="e">
+			<li data-role="listdivider">서울 관광 명소</li>
+			<li><a href="#page2"><span class="ui-li-count">new</span>명 동</a></li>
+			<li><a href="#page3" data-rel="dialog">경 복 궁</a></li>
+			<li><a href="#page4" data-rel="dialog">서울 한양도성</a></li>
+			<li><a href="#page5" data-rel="dialog">청 계 천</a></li>
+			<li><a href="#page6" data-rel="dialog">N 서울타워</a></li>
+			<li><a href="#page7" data-rel="dialog">인사동길</a></li>
+		</ul>
+	</div>
+	
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h4>201455111 정지훈</h4>
+	</div>
+</div>
+
+<div data-role="dialog" id="page2">
+	<div data-role="header">
+		<a href="#page1"  data-iconpos="notext" data-icon="home"></a>
+		<h1>명동 소개</h1>
+	</div>
+
+	<div data-role="content" >
+		<div data-role="collapsible">
+			<h3>기본 정보</h3>
+			<p>명동은 최근 각 브랜드들이 명동 상권에 주요 매장을 공격적으로 오픈하면서 과거의 명성을 되찾고 있다. 특히 4월 말 5월 초 일본의 골든위크가 시작되면 명동은 더 분주해진다. 일본인들에게 익숙한 롯데백화점은 본점과 명품관인 에비뉴엘이 모두 명동 초입에 있다. 뿐만 아니라 신발, 옷에서 액세서리까지 대중적인 가격대의 매장들이 밀집되어 있어 쇼핑을 즐기기에 부담이 없다.</p>
+		</div>
+		<div data-role="collapsible">
+			<h3>동 영 상</h3>
+			
+		</div>
+		<div data-role="collapsible">
+			<h3>사 진</h3>
+			<img src="명동.png" />
+		</div>
+	</div>
+	
+	<div data-role="footer" data-position="fixed">
+		<h4>201455111 정지훈</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page3">
+	<div data-role="header">
+		<a href="#page1"  data-iconpos="notext" data-icon="home"></a>
+		<h1>경복궁 소개</h1>
+	</div>
+
+	<div data-role="content" >
+		<div data-role="collapsible">
+			<h3>기본 정보</h3>
+			<p>조선 왕조 개국 3년인 1395년에 완공된 궁궐은 390여 칸으로 한양의 중심축에 자리했다. 개국공신 정도전은 태조로부터 첫 번째 궁궐의 이름을 지으라는 명을 받았고, 고심 끝에 '새 왕조가 큰 복을 누려 번영할 것'이라는 의미로 경복궁(景福宮)이라는 이름을 붙였다.
+
+국보 제223호인 근정전(勤政殿)은 경복궁의 법전으로 각종 즉위식을 거행했던 왕실의 행사장이었다. 근정전의 옆에 위치한 경회루는 1만원권 구화폐 실릴 만큼 대표적인 건축물로 사랑받아 왔다. 이외에도 일제강점기에 훼손을 겪었다가 2010년에 완전히 복원된 광화문, 고종과 명성황후가 머물던 건천궁, 경복궁의 후원인 향원정 등이 자리하고 있다.
+
+경복궁은 조선 왕조 최고의 궁궐인 만큼 생각보다 넓다. 동선은 자유롭게 조정할 수 있다. 다만 좀 더 자세한 관람을 원한다면 우리궁궐지킴이 해설사들의 설명과 함께하는 것이 가장 좋다.
+
+경복궁과 서촌 지역 방문 관람객의 편의를 높이고 경제 활성화를 위한 경복궁의 서문 영추문이 2018년 12월부터 전면 개방된다. 경복궁 출입문은 이전까지 남쪽의 광화문, 북쪽의 신무문, 동쪽의 국립민속박물관 출입문 등 총 세 곳으로 이번에 서쪽의 영추문을 43년 만에 개방하면서 동·서·남·북 모든 곳에서 출입이 가능해진다.</p>
+		</div>
+		<div data-role="collapsible">
+			<h3>동 영 상</h3>
+			
+		</div>
+		<div data-role="collapsible">
+			<h3>사 진</h3>
+			<img src="경복궁.jpg" />
+		</div>
+	</div>
+	
+	<div data-role="footer" data-position="fixed">
+		<h4>201455111 정지훈</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page4">
+	<div data-role="header">
+		<a href="#page1"  data-iconpos="notext" data-icon="home"></a>
+		<h1>서울 한양도성 소개</h1>
+	</div>
+
+	<div data-role="content" >
+		<div data-role="collapsible">
+			<h3>기본 정보</h3>
+			<p>한양도성은 1396년 현재 서울의 도심부를 감싸고 있는 백악·낙타·목멱·인왕의 능선을 따라 처음 축조된 이후 여러 차례 개축되었다. 평균 높이 약 7~8m, 전체 길이 약 18.6km에 이르며, 현존하는 세계의 도성 중 가장 오랫동안 도성 기능을 수행했다. 한양도성에는 4대문과 4소문이 있다. 4대문은 숙정문·흥인지문·숭례문·돈의문이며, 4소문은 창의문·혜화문·광희문·소의문이다. 한양도성길은 창의문에서 혜화문에 이르는 백악 구간, 혜화문을 지나 흥인지문까지 이어지는 낙산 구간, 흥인지문에서 장충체육관에 이르는 흥인지문구간, 장충체육관에서 남산공원까지 이어지는 남산 구간, 백범광장을 지나 돈의문 터까지 이르는 숭례문 구간, 마지막으로 돈의문 터에서 창의문까지 이어지는 인왕산 구간으로 나뉘어진다.</p>
+		
+		</div>
+		<div data-role="collapsible">
+			<h3>동 영 상</h3>
+			
+		</div>
+		<div data-role="collapsible">
+			<h3>사 진</h3>
+			<img src="한양도성.jpg" />
+		</div>
+	</div>
+	
+	<div data-role="footer" data-position="fixed">
+		<h4>201455111 정지훈</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page5">
+	<div data-role="header">
+		<a href="#page1"  data-iconpos="notext" data-icon="home"></a>
+		<h1>청계천 소개</h1>
+	</div>
+
+	<div data-role="content" >
+		<div data-role="collapsible">
+			<h3>기본 정보</h3>
+			<p>종로구와 중구 사이를 가르는 10.84km의 하천. 청계천의 짧은 정의다. 하지만 청계천에는 무수히 많은 이야기가 농축되어 있다. 그것은 600년 수도 서울이 가지는 역사이기도 하고, 서울 시민 개개인이 가진 소소한 추억이기도 하다. 2003년 7월부터 2005년 9월까지 청계천은 엄청난 변신을 도모했다. 복개한 청계천로와 삼일로 주변 5.84km 구간을 복원하고 총 22개의 다리를 설치하는 등 시민들의 쉼터로 탈바꿈하기 위한 대대적인 공사였다. 청계광장을 중심으로 각종 문화행사 등이 열리면서 지금은 광장의 역할도 하고 있다. 최근에는 예술 공간으로서의 역할도 훌륭히 해내고 있다. 광교갤러리와 청계창작스튜디오 같은 창작 무대에서는 예술가들의 감성을 만날 수 있다. 주말에는 거리 예술가들의 공연이 펼쳐진다. 청계천의 변신은 여전히 현재진행형이다.</p>
+		
+		</div>
+		<div data-role="collapsible">
+			<h3>동 영 상</h3>
+			
+		</div>
+		<div data-role="collapsible">
+			<h3>사 진</h3>
+			<img src="청계천.jpg" />
+		</div>
+	</div>
+	
+	<div data-role="footer" data-position="fixed">
+		<h4>201455111 정지훈</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page6">
+	<div data-role="header">
+		<a href="#page1"  data-iconpos="notext" data-icon="home"></a>
+		<h1>N 서울타워 소개</h1>
+	</div>
+
+	<div data-role="content" >
+		<div data-role="collapsible">
+			<h3>기본 정보</h3>
+			<p>도심 속 로맨틱 아일랜드로 입지를 굳힌 남산서울타워는 예로부터 백년해로의 길지로 널리 알려진 남산(262m) 정상에 위치한 높이 236.7m의 탑으로, 해발 480m 위치에서 서울시를 360도 파노라마 뷰로 조망할 수 있는 최고의 전망을 자랑한다. 외국인이 선택한 관광 명소 1위로 꼽힌 바 있는 서울의 상징이자, 영원한 사랑을 꿈꾸는 전세계 연인들의 로맨스 성지이다. 연인들을 위한 로맨틱한 체험 콘텐츠 '사랑의 자물쇠'와 '하트 의자'가 큰 인기이다. 가족들을 위한 캐릭터 체험 전시관으로 '헬로키티아일랜드'와 '쎈토이뮤지엄&쇼룸' 등이 있다.또한 서울 전경을 바라보며 즐길 수 있는 미슐랭 스타쉐프가 선사하는 고품격 프렌치 코스 ‘엔그릴’, 30여종의 한식뷔페와 전통적인 한식 정찬 ‘한쿡’ 등 특별한 다이닝이 갖추어져 있다. 남산서울타워에서 특별한 젊음과 낭만이 함께 한다.</p>
+		
+		</div>
+		<div data-role="collapsible">
+			<h3>동 영 상</h3>
+			
+		</div>
+		<div data-role="collapsible">
+			<h3>사 진</h3>
+			<img src="남산타워.jpg" />
+		</div>
+	</div>
+	
+	<div data-role="footer" data-position="fixed">
+		<h4>201455111 정지훈</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page7">
+	<div data-role="header">
+		<a href="#page1"  data-iconpos="notext" data-icon="home"></a>
+		<h1>인사동길 소개</h1>
+	</div>
+
+	<div data-role="content" >
+		<div data-role="collapsible">
+			<h3>기본 정보</h3>
+			<p>인사동은 여전히 서울의 대표 거리다. 가장 많은 외국인 관광객이 찾는 거리이며, 스타벅스의 간판마저 한글로 바꿔버릴 만큼 그 전통이 깊숙이 뿌리 내린 동네이기도 하다. 인사동에는 일제강점기 말부터 골동품 상가가 밀집해 있었으니 골동품 거리의 역사만도 족히 반세기는 훌쩍 뛰어넘는다. 지금 인사동 거리는 골동품상을 중심으로 화랑과 갤러리가 다수 자리한다. 그리고 골목 안쪽으로는 전통 맛집들이 즐비하다. 근래에는 쌈지길과 가나아트스페이스, 경인미술관, 목인박물관, 아름다운 차박물관 등 신구의 명소들이 조화를 이루며 새로운 지형도를 그려가고 있다. 이곳에서 꼭 둘러봐야 할 명소로는 전통 문화 쇼핑 공간인 '쌈지길', 국내 유일의 목조각상 전문 사립 박물관 '목인박물관', 사진 전문 갤러리 '갤러리룩스', 추억의 물건들이 전시되어 있는 '토토의 오래된 물건', 전통 한옥 미술 전시관과 다원, 아틀리에를 갖추고 있는 '경인미술관' 등을 꼽을 수 있다. </p>
+		
+		</div>
+		<div data-role="collapsible">
+			<h3>동 영 상</h3>
+			
+		</div>
+		<div data-role="collapsible">
+			<h3>사 진</h3>
+			<img src="인사동.jpg" />
+		</div>
+	</div>
+	
+	<div data-role="footer" data-position="fixed">
+		<h4>201455111 정지훈</h4>
+	</div>
+</div>
+
+</body>
+</html>
+
