@@ -6,10 +6,42 @@
 	<title>201455111 정지훈</title>
 	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
 	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-	
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>	
 	<style>
 		img {width:100%; height:100%;}
+		.title { text-align : left; }
+		#t1 { width: 6em; }
+		#tb1 img { height : 10em; width : 8em;}
+		table.table1 {
+		    border-collapse: collapse;
+		    text-align: center;
+		    line-height: 1.5;
+			width : 80%;
+			margin-top : 1.5em;
+			margin-left : auto;
+			margin-right : auto;
+		}
+		table.table1 thead th {
+		    padding: 10px;
+		    font-weight: bold;
+		    vertical-align: top;
+		    color: #369;
+		    border-bottom: 3px solid #036;
+		}
+		table.table1 tbody th {
+		    width: 150px;
+		    padding: 10px;
+		    font-weight: bold;
+		    vertical-align: top;
+		    border-bottom: 1px solid #ccc;
+		    background: #f3f6f7;
+		}
+		table.table1 td {
+		    width: 350px;
+		    padding: 10px;
+		    vertical-align: top;
+		    border-bottom: 1px solid #ccc;
+		}
 	</style>
 </head>
 
@@ -22,12 +54,24 @@
 	<div data-role="content" >
 		<ul data-role="listview" data-inset="true" data-divider-theme="e">
 			<li data-role="listdivider">서울 관광 명소</li>
-			<li><a href="#page2"><span class="ui-li-count">new</span>명 동</a></li>
+			<li><a href="#page2" data-rel="dialog">명 동</a></li>
 			<li><a href="#page3" data-rel="dialog">경 복 궁</a></li>
 			<li><a href="#page4" data-rel="dialog">서울 한양도성</a></li>
 			<li><a href="#page5" data-rel="dialog">청 계 천</a></li>
 			<li><a href="#page6" data-rel="dialog">N 서울타워</a></li>
-			<li><a href="#page7" data-rel="dialog">인사동길</a></li>
+		</ul>
+		<fieldset data-role="controlgroup">
+			<legend>개발 언어</legend>
+			<input type="checkbox" name="type1" id="type1" value="1" />
+			<label for="type1">C 언어</label>
+			<input type="checkbox" name="type2" id="type2" value="2" checked="checked"/>
+			<label for="type2">Java</label>
+			<input type="checkbox" name="type3" id="type3" value="3" checked="checked"/>
+			<label for="type3">HTML</label>
+		</fieldset>
+		<ul data-role="listview" data-inset="true" data-divider-theme="e">
+			<li data-role="listdivider"></li>
+			<li><a href="#page7"><span class="ui-li-count">new</span>만든이 소개</a></li>
 		</ul>
 	</div>
 	
@@ -36,7 +80,7 @@
 	</div>
 </div>
 
-<div data-role="dialog" id="page2">
+<div data-role="page" id="page2" data-theme="b">
 	<div data-role="header">
 		<a href="#page1"  data-iconpos="notext" data-icon="home"></a>
 		<h1>명동 소개</h1>
@@ -49,7 +93,7 @@
 		</div>
 		<div data-role="collapsible">
 			<h3>동 영 상</h3>
-			
+			<iframe width="100%" height="280px" src="https://www.youtube.com/embed/p9pm4xHaYB0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 		<div data-role="collapsible">
 			<h3>사 진</h3>
@@ -62,7 +106,7 @@
 	</div>
 </div>
 
-<div data-role="page" id="page3">
+<div data-role="page" id="page3" data-theme="b">
 	<div data-role="header">
 		<a href="#page1"  data-iconpos="notext" data-icon="home"></a>
 		<h1>경복궁 소개</h1>
@@ -81,7 +125,7 @@
 		</div>
 		<div data-role="collapsible">
 			<h3>동 영 상</h3>
-			
+			<iframe width="100%" height="280px" src="https://www.youtube.com/embed/OKjCAcybNuc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 		<div data-role="collapsible">
 			<h3>사 진</h3>
@@ -94,7 +138,7 @@
 	</div>
 </div>
 
-<div data-role="page" id="page4">
+<div data-role="page" id="page4" data-theme="b">
 	<div data-role="header">
 		<a href="#page1"  data-iconpos="notext" data-icon="home"></a>
 		<h1>서울 한양도성 소개</h1>
@@ -108,7 +152,7 @@
 		</div>
 		<div data-role="collapsible">
 			<h3>동 영 상</h3>
-			
+			<iframe width="100%" height="280px" src="https://www.youtube.com/embed/_QZaLJYhRyQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 		<div data-role="collapsible">
 			<h3>사 진</h3>
@@ -121,7 +165,7 @@
 	</div>
 </div>
 
-<div data-role="page" id="page5">
+<div data-role="page" id="page5" data-theme="b">
 	<div data-role="header">
 		<a href="#page1"  data-iconpos="notext" data-icon="home"></a>
 		<h1>청계천 소개</h1>
@@ -135,7 +179,7 @@
 		</div>
 		<div data-role="collapsible">
 			<h3>동 영 상</h3>
-			
+			<iframe width="100%" height="280px" src="https://www.youtube.com/embed/YK0M0TGD3mc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 		<div data-role="collapsible">
 			<h3>사 진</h3>
@@ -148,7 +192,7 @@
 	</div>
 </div>
 
-<div data-role="page" id="page6">
+<div data-role="page" id="page6" data-theme="b">
 	<div data-role="header">
 		<a href="#page1"  data-iconpos="notext" data-icon="home"></a>
 		<h1>N 서울타워 소개</h1>
@@ -162,7 +206,7 @@
 		</div>
 		<div data-role="collapsible">
 			<h3>동 영 상</h3>
-			
+			<iframe width="100%" height="280px" src="https://www.youtube.com/embed/IEtnTt2W6oQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 		<div data-role="collapsible">
 			<h3>사 진</h3>
@@ -176,32 +220,115 @@
 </div>
 
 <div data-role="page" id="page7">
-	<div data-role="header">
+	<div data-role="header" data-theme="b">
 		<a href="#page1"  data-iconpos="notext" data-icon="home"></a>
-		<h1>인사동길 소개</h1>
-	</div>
-
-	<div data-role="content" >
-		<div data-role="collapsible">
-			<h3>기본 정보</h3>
-			<p>인사동은 여전히 서울의 대표 거리다. 가장 많은 외국인 관광객이 찾는 거리이며, 스타벅스의 간판마저 한글로 바꿔버릴 만큼 그 전통이 깊숙이 뿌리 내린 동네이기도 하다. 인사동에는 일제강점기 말부터 골동품 상가가 밀집해 있었으니 골동품 거리의 역사만도 족히 반세기는 훌쩍 뛰어넘는다. 지금 인사동 거리는 골동품상을 중심으로 화랑과 갤러리가 다수 자리한다. 그리고 골목 안쪽으로는 전통 맛집들이 즐비하다. 근래에는 쌈지길과 가나아트스페이스, 경인미술관, 목인박물관, 아름다운 차박물관 등 신구의 명소들이 조화를 이루며 새로운 지형도를 그려가고 있다. 이곳에서 꼭 둘러봐야 할 명소로는 전통 문화 쇼핑 공간인 '쌈지길', 국내 유일의 목조각상 전문 사립 박물관 '목인박물관', 사진 전문 갤러리 '갤러리룩스', 추억의 물건들이 전시되어 있는 '토토의 오래된 물건', 전통 한옥 미술 전시관과 다원, 아틀리에를 갖추고 있는 '경인미술관' 등을 꼽을 수 있다. </p>
-		
-		</div>
-		<div data-role="collapsible">
-			<h3>동 영 상</h3>
-			
-		</div>
-		<div data-role="collapsible">
-			<h3>사 진</h3>
-			<img src="인사동.jpg" />
-		</div>
+		<h1>이력서 소개</h1>
 	</div>
 	
-	<div data-role="footer" data-position="fixed">
+	<div data-role="content" >
+		<table class = "table1">
+				<thead>
+					<tr><th colspan="5" class="title">기 초 자 료</th></tr>
+				</thead>
+				<tbody id="tb1">
+					<tr>
+						<td rowspan="4" id="t1"><img id="stu-pic" src="stu.jpg"/></td> 
+						<td>이  름</td>
+						<td>정 지 훈</td>
+						<td>생년월일</td>
+						<td>1995.08.09</td>
+					</tr>
+					<tr>
+						<td>연 락 처</td>
+						<td>010-9269-4209</td>
+						<td>E-Mail</td>
+						<td>55wlgns55@naver.com</td>
+					</tr>
+					<tr>
+						<td>특 기</td>
+						<td>코 딩</td>
+						<td>취 미</td>
+						<td>음악 듣기</td>
+					</tr>
+					<tr>
+						<td>주 소</td>
+						<td colspan="3">경기도 안양시 귀인로 213번지</td>
+					</tr>
+				</tbody>
+			</table>
+			<table class = "table1">
+				<thead>
+					<tr><th colspan="7" class="title">학 력 사 항</th></tr>
+				</thead>
+				<tbody id="tb2">
+					<tr>
+						<th>입학년도</th>
+						<th>졸업년도</th>
+						<th>학 교 명</th>
+						<th>계 열</th>
+						<th>학 과</th>
+						<th>구 분</th>
+						<th>소 재 지</th>
+					<tr>
+						<td>2002</td>
+						<td>2008</td>
+						<td>평촌초등학교</td>
+						<td>-</td>
+						<td>-</td>
+						<td>졸 업</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td>2008</td>
+						<td>2011</td>
+						<td>평촌중학교</td>
+						<td>-</td>
+						<td>-</td>
+						<td>졸 업</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td>2011</td>
+						<td>2014</td>
+						<td>동안고등학교</td>
+						<td>이 과</td>
+						<td>-</td>
+						<td>졸 업</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td>2014</td>
+						<td>-</td>
+						<td>한신대학교</td>
+						<td>공 과</td>
+						<td>정보통신학과</td>
+						<td>재 학</td>
+						<td>-</td>
+					</tr>
+				</tbody>
+			</table>
+			<table class = "table1">
+				<thead>
+					<tr><th colspan="3" class="title">자 격 사 항</th></tr>
+				</thead>
+				<tbody id="tb3">
+					<tr>
+						<th>OA능력</th>
+						<th>외국어 능력</th>
+						<th>기타 사항</th>
+					</tr>
+					<tr>
+						<td>정보보안산업기사</td>
+						<td>-</td>
+						<td>-</td>
+					</tr>
+				</tbody>
+			</table>
+	</div>
+	<div data-role="footer" data-position="fixed" data-theme="b">
 		<h4>201455111 정지훈</h4>
 	</div>
 </div>
-
 </body>
 </html>
 
